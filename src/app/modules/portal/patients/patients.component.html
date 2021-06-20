@@ -1,0 +1,43 @@
+<div class="container">
+    <p class="size-3 dim" *ngIf="errorMsg != ''">No Patients Found</p>
+    <div class="tablecontainer" *ngIf="dataSource.length > 0">
+        <p class="size-3 dim bold">Patient List</p>
+        <table class="table" mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef=" ">
+                <th mat-header-cell *matHeaderCellDef> </th>
+                <td mat-cell *matCellDef="let user"> <img [src]="user.Avatar" width="100%"></td>
+            </ng-container>
+            <ng-container matColumnDef="Name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let user"> {{user.Name}} </td>
+            </ng-container>
+            <ng-container matColumnDef="Gender">
+                <th mat-header-cell *matHeaderCellDef> Gender </th>
+                <td mat-cell *matCellDef="let user">
+                    <div class="tag">{{user.Gender}}</div>
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="Age">
+                <th mat-header-cell *matHeaderCellDef> Age </th>
+                <td mat-cell *matCellDef="let user"> {{user.Age}} </td>
+            </ng-container>
+            <ng-container matColumnDef="PhoneNumber">
+                <th mat-header-cell *matHeaderCellDef> Phone Number </th>
+                <td mat-cell *matCellDef="let user"> {{user.PhoneNumber}} </td>
+            </ng-container>
+            <ng-container matColumnDef="Address">
+                <th mat-header-cell *matHeaderCellDef> Address </th>
+                <td mat-cell *matCellDef="let user"> {{user.Address}} </td>
+            </ng-container>
+            <ng-container matColumnDef="&">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let user">
+                    <div class="tag2">View Profile</div>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="dataColumns"></tr>
+            <tr mat-row *matRowDef="let myRowData; columns: dataColumns"></tr>
+        </table>
+    </div>
+</div>

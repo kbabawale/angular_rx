@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .tablecontainer {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    .table {
+      font-family: var(--app-font-family-silka);
+      color: #727894;
+      img {
+        width: 50%;
+      }
+      .tag {
+        width: 40%;
+        text-align: center;
+        background: #f3f4f6e8;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+      .tag2 {
+        width: 40%;
+        text-align: center;
+        background: #f0f6ff;
+        color: #537fe9;
+        border-radius: 5px;
+        padding: 5px 10px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

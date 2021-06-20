@@ -1,0 +1,53 @@
+<div class="container">
+    <section class="left">
+        <div class="top">
+            <img src="../../../../assets/images/logo.svg" alt="logo" width="100%" />
+        </div>
+        <div class="middle">
+            <div (click)="goTo('patients')" [ngClass]="{navlink: true, selected: selected_links.patients}">
+                <img src="../../../../assets/icons/users.svg" alt="users" width="100%" />
+                <span>Patient List</span>
+            </div>
+            <div (click)="goTo('add_patient')" [ngClass]="{navlink: true, selected: selected_links.add_patient}">
+                <img src="../../../../assets/icons/add_user.svg" alt="add_user" width="100%" />
+                <span>Register Patient</span>
+            </div>
+        </div>
+        <div class="bottom">
+            <div [ngClass]="{navlink2: true}">
+                <span>Darlene Robertson</span>
+            </div>
+            <div [ngClass]="{navlink: true, selected: selected_links.logout}">
+                <img src="../../../../assets/icons/log-off.svg" alt="logout" width="100%" />
+                <span>Logout</span>
+            </div>
+        </div>
+    </section>
+    <section class="right">
+        <div class="top">
+            <div class="innertop">
+                <div *ngIf="showSearch" class="search">
+                    <input type="text" placeholder="search for patient name" />
+                    <img src="../../../../assets/images/search.svg" alt="search" width="100%" />
+                </div>
+                <div *ngIf="!showSearch" class="search2">
+                    <p class="size-3 dim">Register Patient</p>
+                </div>
+
+                <div class="righticons">
+                    <div class="notification">
+                        <img src="../../../../assets/icons/notification.svg" width="100%" alt="notification" />
+                    </div>
+                    <div class="profile">
+                        <img src="../../../../assets/images/profile.svg" width="100%" alt="profile" />
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <router-outlet></router-outlet>
+        </div>
+    </section>
+</div>

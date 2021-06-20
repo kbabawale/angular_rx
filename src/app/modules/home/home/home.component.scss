@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .left {
+    width: 45%;
+    height: 100vh;
+    background: url("../../../../assets/images/homebg.svg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    img {
+      height: 70%;
+    }
+    p {
+      text-align: center;
+      width: 100%;
+      &:last-child {
+        margin-top: 2%;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    padding: 0 10%;
+    background-color: #fff;
+    // background: url("../../../../assets/images/curved_line.svg") 401px 245px
+    //   no-repeat padding-box;
+    // background-size: 123px 17px;
+
+    p {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 10%;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        padding: 3% 5%;
+        margin-bottom: 2%;
+        border: 1px solid #d1d1d1;
+        border-radius: 5px;
+      }
+      button {
+        color: #fff;
+        padding: 4% 0;
+        text-align: center;
+        background: #2c61e4;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-top: 5%;
+      }
+      .last {
+        width: 100%;
+        margin-top: 2%;
+        text-align: center;
+      }
+    }
+  }
+}

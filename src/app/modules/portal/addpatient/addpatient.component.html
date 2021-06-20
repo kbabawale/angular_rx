@@ -1,0 +1,219 @@
+<div class="container" [ngStyle]="{height: calcHeight+'px'}">
+    <div class="top">
+        <div class="navitem">
+            <img [ngClass]="{'hideVisi': stage!=1}" src="../../../../assets/images/heart_indicator.svg" alt="heart"
+                width="100%" />
+            <div [ngClass]="{'bold': true, 'number':stage==1,'number-faded':stage!=1}">1</div>
+            <span [ngClass]="{'size-4': true, 'faded':stage!=1}">Patient Details</span>
+        </div>
+        <hr>
+        <div class="navitem">
+            <img [ngClass]="{'hideVisi': stage!=2}" src="../../../../assets/images/heart_indicator.svg" alt="heart"
+                width="100%" />
+            <div [ngClass]="{'bold': true, 'number':stage==2,'number-faded':stage!=2}">2</div>
+            <span [ngClass]="{'size-4': true, 'faded':stage!=2}">Other</span>
+        </div>
+        <hr>
+        <div class="navitem">
+            <img [ngClass]="{'hideVisi': stage!=3}" src="../../../../assets/images/heart_indicator.svg" alt="heart"
+                width="100%" />
+            <div [ngClass]="{'bold': true, 'number':stage==3,'number-faded':stage!=3}">3</div>
+            <span [ngClass]="{'size-4': true, 'faded':stage!=3}">Next of kin</span>
+        </div>
+        <hr>
+        <div class="navitem">
+            <img [ngClass]="{'hideVisi': stage!=4}" src="../../../../assets/images/heart_indicator.svg" alt="heart"
+                width="100%" />
+            <div [ngClass]="{'bold': true, 'number':stage==4,'number-faded':stage!=4}">4</div>
+            <span [ngClass]="{'size-4': true, 'faded':stage!=4}">HMO</span>
+        </div>
+    </div>
+    <div class="bottom">
+        <div *ngIf="stage==1" class="left">
+            <img src="../../../../assets/images/placeholder.svg" alt="placeholder" width="100%" />
+            <span class="gray">Drag &amp; Drop your picture here <br> OR </span>
+            <button type="button">Upload Picture</button>
+        </div>
+        <div [ngClass]="{'right': true,'fullwidth':stage!=1}">
+            <div class="form">
+                <div class="top">
+                    <ng-container *ngIf="stage==1">
+                        <div class="row">
+                            <div class="select" [style.width.px]="100">
+                                <div class="left">
+                                    <span class="toplabel">Patient Title</span>
+                                    <span class="val">Mr</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="textfield">
+                                <input type="text" placeholder="Patient Surname" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="textfield">
+                                <input type="text" placeholder="Patient First Name" />
+                            </div>
+                            <div class="textfield">
+                                <input type="text" placeholder="Patient Middle Name" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="textfield">
+                                <input type="text" placeholder="Patient Phone" />
+                            </div>
+                            <div class="textfield">
+                                <input type="text" placeholder="Patient Email" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="select" [style.width.px]="150">
+                                <div class="left">
+                                    <span class="toplabel">Gender</span>
+                                    <span class="val">Male</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="textfield">
+                                <input type="text" placeholder="Date of Birth" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="textarea">
+                                <textarea placeholder="Patient Address"></textarea>
+                            </div>
+
+                        </div>
+                    </ng-container>
+                    <ng-container *ngIf="stage==2">
+                        <div class="row">
+                            <div class="select" [style.width.px]="150">
+                                <div class="left">
+                                    <span class="toplabel">Ethnicity</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="select" [style.width.px]="150">
+                                <div class="left">
+                                    <span class="toplabel">Religion</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="select" [style.width.px]="250">
+                                <div class="left">
+                                    <span class="toplabel">Marital Status</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="textfield">
+                                <input type="text" placeholder="Occupation" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="textfield">
+                                <input type="text" placeholder="Blood Group" />
+                            </div>
+                            <div class="textfield">
+                                <input type="text" placeholder="Patient Type" />
+                            </div>
+                            <div class="select" [style.width.px]="200">
+                                <div class="left">
+                                    <span class="toplabel">Nationality</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="select" [style.width.px]="270">
+                                <div class="left">
+                                    <span class="toplabel">State of Origin</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="select" [style.width.px]="300">
+                                <div class="left">
+                                    <span class="toplabel">Local Government</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="select" [style.width.px]="300">
+                                <div class="left">
+                                    <span class="toplabel">State of Residence</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+
+                        </div>
+
+                    </ng-container>
+                    <ng-container *ngIf="stage==3">
+                        <div class="row">
+                            <div class="select" [style.width.px]="150">
+                                <div class="left">
+                                    <span class="toplabel">Ethnicity</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="select" [style.width.px]="150">
+                                <div class="left">
+                                    <span class="toplabel">Religion</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="select" [style.width.px]="250">
+                                <div class="left">
+                                    <span class="toplabel">Marital Status</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="textfield">
+                                <input type="text" placeholder="Occupation" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="textfield">
+                                <input type="text" placeholder="Full Name" />
+                            </div>
+
+                            <div class="select" [style.width.px]="150">
+                                <div class="left">
+                                    <span class="toplabel">Relationship</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+                            <div class="textfield">
+                                <input type="text" placeholder="Patient Phone Number" />
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="textarea">
+                                <textarea placeholder="Patient Address"></textarea>
+                            </div>
+                        </div>
+
+                    </ng-container>
+                    <ng-container *ngIf="stage==4">
+                        <div class="row">
+                            <div class="select" [style.width.px]="300">
+                                <div class="left">
+                                    <span class="toplabel">Sponsor Billing Policy</span>
+                                </div>
+                                <img src="../../../../assets/images/dropdown_arrow.svg" width="100%" alt="arrow" />
+                            </div>
+
+                        </div>
+
+                    </ng-container>
+                </div>
+                <div class="bottom">
+                    <button *ngIf="stage !=1" class="unfilled" (click)="goBack()" type="button">Back</button>
+                    <button *ngIf="stage !=4" class="filled" (click)="proceed()" type="button">Continue</button>
+                    <button *ngIf="stage == 4" class="filled" type="button">Register
+                        Patient</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

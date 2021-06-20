@@ -1,0 +1,34 @@
+{
+    "patients":[
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":1,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        },
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":2,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        },
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":3,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        },
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":4,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        },
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":5,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        },
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":6,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        },
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":7,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        },
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":8,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        },
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":9,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        },
+        {
+            "Avatar":"../../../../assets/images/avatar.svg","Id":10,"Name":"Peter Drury","Gender":"Male","Age":5,"PhoneNumber":"2348093884883","Address":"Lagos, Canada"
+        }
+    ]
+}
